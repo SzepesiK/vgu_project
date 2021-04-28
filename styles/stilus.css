@@ -1,8 +1,4 @@
 
-div#wrapper {
-    margin: 10px;
-}
-
 nav {
     margin: 0px 0px 0px 0px;
     top: 0px;    
@@ -20,7 +16,7 @@ nav ul li {
 }
 
 nav ul li.active {
-    border-right: 5px solid blue;
+    border-right: 3px solid blue;
 }
 
 nav ul a {
@@ -50,5 +46,30 @@ hr.mainhr {
 footer {
     margin: 10px;
     padding: 5px 20px;
-    background-color: #CC99FF;
 }
+
+center {
+    padding: 1px;
+}
+
+p {
+    padding: 1px;
+}
+
+#table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#galeria {
+    margin: 0 auto; 
+} 
+
+div.kep { 
+    display: inline-block; 
+}  
+
+div.kep img { 
+    width: 200px; 
+} 
