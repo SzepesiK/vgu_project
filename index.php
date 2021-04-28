@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include('./includes/config.inc.php');
 	if (isset($_GET['oldal'])) {
 		$oldal = $_GET['oldal'];

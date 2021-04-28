@@ -26,6 +26,23 @@ Az egészséges környezet és az esztétikus városkép kialakításához nélk
 
 <p>A VGÜ Nonprofit Kft. hulladékgazdálkodási közszolgáltatási tevékenysége során kötelezően alkalmazandó jogszabályok felsorolása az 1997. évi CLV. törvény 17/B § (9) e) bekezdése alapján pdf</p><hr class="mainhr">
 
+<div class="row">
+    <div class="col-sm contact">
+        <H2>Videó1</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ym1zJGAW3WE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm contact">
+        <H2>Video2</h2>
+        <video id="my-video" class="video-js" controls preload="auto" width="560" height="315" data-setup="{}">
+    <source src="video/VIDEO.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+    </div>
+  </div>
 
 Kapcsolat
 
