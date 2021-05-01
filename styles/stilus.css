@@ -16,27 +16,21 @@ nav ul li {
 }
 
 nav ul li.active {
-    border-right: 3px solid blue;
+    border-right: 3px solid rgb(255, 123, 0);
 }
 
 nav ul a {
     text-decoration: none;
-    color: blue;
+    color: rgb(85, 34, 0);
 }
 
 .vgazd{
     float: right;
     margin: 0 0 15px 15px;
     padding: 3px;
-width: 10%;
-height: auto;
-border: none;
-}
-
-div#content {
-    display: table-cell;
-    width: 100%;
-    padding: 15px;
+    width: 10%;
+    height: auto;
+    border: none;
 }
 
 hr.mainhr {
@@ -73,3 +67,11 @@ div.kep {
 div.kep img { 
     width: 200px; 
 } 
+
+#loggedIn {
+    color: rgb(61, 19, 2)
+}
+
+ul.kepgaleria{
+    color:red;
+}

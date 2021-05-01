@@ -10,42 +10,13 @@ while (($fajl = readdir($olvaso)) !== false) {
     }
 }
 closedir($olvaso);
-
 ?>
 
 <title>Salgótarjáni Ebrendészeti telep és Menhely</title>
-
 <div id="galeria">
     <center>
         <h3>Salgótarjáni Ebrendészeti telep és Menhely</h3>
     </center>
-
-    <h5>Feltöltés a galériába:</h5>
-<?php
-if (!empty($uzenet)) 
-{ 
-echo '<ul>';
-foreach($uzenet as $u)
-echo "<li>$u</li>";
-echo '</ul>';
-}
-?>
-<div>
-<form action="feltolt.php" method="post" 
-enctype="multipart/form-data">
-
-<label>Első:
-<input type="file" name="elso" required>
-</label>
-<label>Második:
-<input type="file" name="masodik">
-</label>
-<label>Harmadik:
-<input type="file" name="harmadik">
-</label>
-<input type="submit" name="kuld">
-</form>
-</div>
 
     <?php
     arsort($kepek);
@@ -64,6 +35,45 @@ enctype="multipart/form-data">
         </div>
     <?php
     }
-
+    ?>
+    <?php
+    if (isset($_SESSION['userId'])) {
+        echo '<div class="col-sm-2 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <center><b>Feltöltés a galériába:</b></center>
+            </div>
+                <div class="card-body">
+                    <center>
+                        <form method="POST" action="feltolt.php" enctype="multipart/form-data">
+                            <table id="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <ul class="noDots">
+                                                    <li><label>Első:
+                                                        <input type="file" name="elso" required>
+                                                    </label><br></li>
+                                                    <li><label>Második:
+                                                        <input type="file" name="masodik">
+                                                    </label><br></li>
+                                                    <li><label>Harmadik:
+                                                        <input type="file" name="harmadik">
+                                                    </label><br></li>
+                                                </ul>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <input type="submit" name="kuld">
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>';
+    }
     ?>
 </div>
